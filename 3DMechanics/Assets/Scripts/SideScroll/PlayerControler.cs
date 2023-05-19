@@ -22,7 +22,7 @@ public class PlayerControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
+        float horizontal = Input.GetAxis("Horizontal");
 
         transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, Mathf.Min(Camera.main.transform.position.z+9f, transform.position.z - horizontal*speed)), Time.deltaTime);
        
@@ -48,4 +48,5 @@ public class PlayerControler : MonoBehaviour
             isGrounded = true;
         }
     }
+    
 }

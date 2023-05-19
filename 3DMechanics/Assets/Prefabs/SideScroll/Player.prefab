@@ -97,8 +97,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.096014, y: 1.0384045, z: 1}
+  m_Center: {x: -0.009600639, y: 0, z: 0}
 --- !u!54 &5153528003185850877
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,3 +129,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRB: {fileID: 5153528003185850877}
   speed: 10
+  jumpForce: 0
